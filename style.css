@@ -2,12 +2,11 @@
   box-sizing: border-box;
 }
 
-
 body{
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background-image: linear-gradient( transparent 29%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-mobile.png);
+  background-image: linear-gradient( transparent 25%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: contain;
@@ -16,14 +15,16 @@ body{
 
 .card-front{
   position: absolute;
-  top: 8rem;
+  top: 7rem;
   left: 1rem;
   background-image: url(./images/bg-card-front.png);
   background-repeat: no-repeat;
   background-size: contain;
   color: white;
   width: 285px;
+  height: 140px;
   border-radius: 5px;
+
 }
 
 .card-front-logo{
@@ -58,7 +59,97 @@ body{
 }
 
 
+.card-back{
+  position: relative;
+  background-image: url(./images/bg-card-back.png);
+  width: 280px;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 1.1rem;
+  left: 4.3rem;
+  z-index: -1;
+}
 
+.card-security{
+  font-size: .7rem;
+  color: white;
+  position: relative;
+  top:4.3rem;
+  left: 14.3rem;
+}
+
+.spacing-title{
+  margin-left: .4rem;
+}
+.card-info{
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.card-info input{
+  padding-left: .7rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: .8rem;
+  border: 1px solid hsl(279, 6%, 55%);
+  border-radius: 5px;
+  outline: none;
+}
+
+.card-info-title{
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: rgb(33, 9, 47);
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.extra-info{
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
+.info-date{
+  width: 100%;
+}
+
+.date-year{
+  margin-top: .5rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.date-year input{
+  width: 100%;
+}
+
+.cvc{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.submit-button{
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  padding: 1rem 0;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 1rem;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 @media screen and (min-width: 1024px) {
   body{
@@ -67,7 +158,7 @@ body{
   }  
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 330px) {
   body{
     background-size: cover;
     background-position: 40% 0%;
