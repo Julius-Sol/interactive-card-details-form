@@ -82,16 +82,17 @@ body{
 .spacing-title{
   margin-left: .4rem;
 }
+
 .card-info{
   margin: 0 auto;
   margin-top: 9rem;
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap: .6rem;
 }
 
 .card-info input{
+  margin-top: 10px;
   padding-left: .7rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -107,16 +108,30 @@ body{
   color: rgb(33, 9, 47);
   letter-spacing: 1.2px;
   font-weight: 500;
+  grid-area: exp-title;
+}
+
+.title-space{
+  margin-top: 20px;
 }
 
 .extra-info{
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "info-date cvc";
   gap: .5rem;
 }
 
 .info-date{
-  width: 100%;
+  grid-area: info-date;
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr)  minmax(80px, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "exp-title exp-title"
+    "exp-month exp-year";
 }
 
 .date-year{
@@ -125,15 +140,25 @@ body{
   gap: .5rem;
 }
 
-.date-year input{
-  width: 100%;
+#exp-month{
+  margin-top: 5px;
+  grid-area: exp-month;
+}
+
+#exp-year{
+  margin-top: 5px;
+  grid-area: exp-year;
 }
 
 .cvc{
+  grid-area: cvc;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+}
+
+#cvc-number{
+  margin-top: 5px;
 }
 
 .submit-button{
@@ -142,13 +167,23 @@ body{
   padding: 1rem 0;
   border-radius: 10px;
   border-style: none;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .attribution{
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.no-error{
+  display: none;
+}
+
+.error{
+  color: red;
+  margin-top: 3px;
+  font-size: .7rem;
 }
 
 @media screen and (min-width: 1024px) {
