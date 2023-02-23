@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background-image: linear-gradient( transparent 25%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-mobile.png);
+  background-image: linear-gradient( transparent 25%, hsl(0, 0%, 100%) 0%), url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: contain;
@@ -239,12 +239,58 @@ body{
   display: none;
 }
 
+input{
+  cursor: pointer;
+}
+
 
 @media screen and (min-width: 1024px) {
   body{
-    background-image: linear-gradient( to right, transparent 30%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-desktop.png);
+    background-image: linear-gradient( to right, transparent 30%, hsl(0, 0%, 100%) 0%), url(./images/bg-main-desktop.png);
     background-size: cover;
   }  
+
+  .card-info{
+    position: relative;
+    left:12rem;
+    margin-top: 5rem;
+    width: 30%;
+  }
+
+  .confirmation-container{
+    position: relative;
+    left:12rem;
+    margin-top: 5rem;
+    width: 30%;
+  }
+
+  .card-front{
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+  }
+
+  .card-back{
+    position: relative;
+    top: 20rem;
+    left: 10rem;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .card-front{
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+  }
+
+  .card-back{
+    position: relative;
+    top: 20rem;
+    left: 18rem;
+  }
+  
 }
 
 @media screen and (max-width: 330px) {
