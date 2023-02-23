@@ -30,7 +30,7 @@ Users should be able to:
 
 ![mobile](./screenshots/mobile.png)
 ![mobile-active](./screenshots/mobile-active.png)
-![confirmation-mobile](./screenshots/confirmation-mobile.png)
+![confirmation-mobile](./screenshots/Confirmation-mobile.png)
 ![desktop](./screenshots/desktop.png)
 ![desktop-active](./screenshots/desktop-active.png)
 ![desktop-confirmation](./screenshots/desktop-confirmation.png)
