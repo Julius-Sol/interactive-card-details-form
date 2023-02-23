@@ -142,12 +142,12 @@ body{
 }
 
 #exp-month{
-  margin-top: 5px;
+  margin-top: 10px;
   grid-area: exp-month;
 }
 
 #exp-year{
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 5px;
   grid-area: exp-year;
 }
@@ -160,10 +160,10 @@ body{
 }
 
 #cvc-number{
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-.submit-button{
+.submit-button, .continueBtn{
   background-color: hsl(278, 68%, 11%);
   color: white;
   padding: 1rem 0;
@@ -200,6 +200,46 @@ body{
 .error-year{
   grid-area: error-year;
 }
+
+.confirmation-container{
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.complete-icon{
+  height: 5rem;
+  width: 5rem;
+}
+
+.complete-title{
+  color: hsl(278, 68%, 11%);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.complete-para{
+  color: hsl(279, 6%, 55%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.continueBtn{
+  width: 100%;
+  font-size: 1rem;
+}
+
+.hide{
+  display: none;
+}
+
+
 @media screen and (min-width: 1024px) {
   body{
     background-image: linear-gradient( to right, transparent 30%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-desktop.png);

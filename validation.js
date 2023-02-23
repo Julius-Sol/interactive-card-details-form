@@ -5,6 +5,7 @@ const cardMonth = document.querySelector("#exp-month");
 const cardYear = document.querySelector("#exp-year");
 const cardCvc = document.querySelector("#cvc-number");
 const formButton = document.querySelector(".submit-button");
+const completeMsg = document.querySelector(".confirmation-container");
 
 //Regex to check if value is composed of just numbers
 const numberRegex = new RegExp("^[0-9]*$");
@@ -129,6 +130,7 @@ form.addEventListener("submit",(event)=>{
     isYearValid && isCvcValid;  
 
     if(isFormValid){
-      formButton.textContent = "Continue"
+      form.classList.toggle("hide");
+      completeMsg.classList.toggle("hide");
     }
 });
