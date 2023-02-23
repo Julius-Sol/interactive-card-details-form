@@ -131,7 +131,8 @@ body{
   grid-template-rows: auto;
   grid-template-areas: 
     "exp-title exp-title"
-    "exp-month exp-year";
+    "exp-month exp-year"
+    "error-month error-year";
 }
 
 .date-year{
@@ -147,6 +148,7 @@ body{
 
 #exp-year{
   margin-top: 5px;
+  margin-left: 5px;
   grid-area: exp-year;
 }
 
@@ -177,7 +179,7 @@ body{
 }
 
 .no-error{
-  display: none;
+  visibility: hidden;
 }
 
 .error{
@@ -186,6 +188,18 @@ body{
   font-size: .7rem;
 }
 
+.error-input{
+  border: 1px solid red !important; 
+}
+
+.error-month{
+  grid-area: error-month;
+  height: 25px;
+}
+
+.error-year{
+  grid-area: error-year;
+}
 @media screen and (min-width: 1024px) {
   body{
     background-image: linear-gradient( to right, transparent 30%, hsl(270, 3%, 87%) 0%), url(./images/bg-main-desktop.png);

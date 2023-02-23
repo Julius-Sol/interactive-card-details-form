@@ -34,24 +34,24 @@
 
     <form class="card-info">
       <div><label for="cardholder-name" class="card-info-title">Cardholder Name</label></div>
-      <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed ">
+      <input type="text" name="cardholder-name" id="cardholder-name" placeholder="e.g. Jane Appleseed " autocomplete="off">
       <span class="error" aria-live="polite"></span>
 
       <div class="title-space"><label for="card-number" class="card-info-title">Card Number</label></div>
-      <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+      <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" autocomplete="off" maxlength="19">
       <span class="error" aria-live="polite"></span>
       
       <div class="extra-info title-space">
         <div class="info-date">
           <label for="exp-month" class="card-info-title">Exp. Date <span class="spacing-title">(MM/YY)</span></label>
-          <input type="text" name="exp-month" id="exp-month" placeholder="MM" maxlength="2">
-          <span class="error" aria-live="polite"></span>
-          <input type="text" name="exp-year" id="exp-year" placeholder="YY" maxlength="2">
-          <span class="error" aria-live="polite"></span>
+          <input type="text" name="exp-month" id="exp-month" placeholder="MM" maxlength="2" autocomplete="off">
+          <span class="error error-month" aria-live="polite"></span>
+          <input type="text" name="exp-year" id="exp-year" placeholder="YY" maxlength="2" autocomplete="off">
+          <span class="error error-year" aria-live="polite"></span>
         </div>
         <div class="cvc">
           <label for="cvc-number" class="card-info-title">cvc</label>
-          <input type="text" name="cvc-number" id="cvc-number" placeholder="e.g. 123">
+          <input type="text" name="cvc-number" id="cvc-number" placeholder="e.g. 123" autocomplete="off" maxlength="4">
           <span class="error" aria-live="polite"></span>
         </div>
       </div>
